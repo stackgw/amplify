@@ -1,6 +1,28 @@
 {
+  "api": {
+    "RestApi": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "RestApiItems"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
   "function": {
     "AmplifyFunction": {
+      "build": true,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    },
+    "RestApiItems": {
       "build": true,
       "dependsOn": [],
       "providerPlugin": "awscloudformation",

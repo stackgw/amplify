@@ -16,7 +16,8 @@
         "AmplifyFunction": {
           "deploymentBucketName": "amplify-reactapp-dev-132308-deployment",
           "s3Key": "amplify-builds/AmplifyFunction-53644f5339666747766d-build.zip"
-        }
+        },
+        "RestApiItems": {}
       }
     }
   }
